@@ -1,0 +1,21 @@
+<div>
+    <div class="modal-header">
+        <h3 class="modal-title">{{title}}</h3>
+    </div>
+    <div class="modal-body">
+        <form>
+            Nombre:<br>
+            <input type="text" class="form-control" name="nombre" ng-model="cerveza.nombre"></input>
+            Precio:<br>
+            <input type="text" class="form-control" name="precio" ng-model="cerveza.precio"></input>
+            Graduacion:<br>
+            <input type="text" class="form-control" name="posicion" ng-model="cerveza.grad"></input>
+            Cerveceria:<br>
+            <input type="text" class="form-control" name="tipo" ng-model="cerveza.tipo"></input>
+        </form>
+    </div>
+    <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+<div>

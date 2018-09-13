@@ -1,0 +1,17 @@
+<div>
+    <div class="modal-header">
+        <h3 class="modal-title">{{title}}</h3>
+    </div>
+    <div class="modal-body">
+        <form>
+            Nombre:<br>
+            <input type="text" class="form-control" name="nombre" ng-model="cerveceria.nombre"></input>
+            Direccion:<br>
+            <input type="text" class="form-control" name="Direccion" ng-model="cerveceria.direccion"></input>
+        </form>
+    </div>
+    <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+<div>

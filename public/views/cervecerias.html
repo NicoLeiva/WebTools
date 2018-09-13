@@ -1,0 +1,33 @@
+<div class="container">
+	<div class="page-header">
+    	<div class="clearfix">
+            <div class="col-md-12">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <h1><br>Cervecerias</br></h1>
+										<button type="button" class="btn btn-primary btn-sm btn-lg active" ng-click="addCerveceria()">
+											Agregar Cerveceria
+										</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Direccion</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat = "cerveceria in cervecerias">
+				<td>{{cerveceria.nombre}}</td>
+				<td>{{cerveceria.direccion}}</td>
+				<td>
+						<button type="button" class="btn btn-success btn-sm btn-lg active" ng-click="updateCerveceria(cerveceria)">Edit</button>
+						<button type="button" class="btn btn-danger btn-sm btn-lg active" ng-click="deleteCerveceria(cerveceria)">Delete</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
